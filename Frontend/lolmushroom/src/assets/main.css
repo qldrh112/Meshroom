@@ -1,0 +1,10 @@
+@font-face {
+  font-family: LineFont;
+  src:
+    url('@/assets/fonts/LINESeedKR-Bd.woff') format('woff'),
+    url('@/assets/fonts/LINESeedKR-Bd.woff2') format('woff2');
+}
+
+*{
+  font-family: LineFont;
+}

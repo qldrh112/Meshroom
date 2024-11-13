@@ -1,0 +1,48 @@
+{
+  "name": "lolmushroom",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@chenfengyuan/vue-countdown": "^2.1.2",
+    "@stomp/stompjs": "^7.0.0",
+    "@types/node": "^22.1.0",
+    "async-mutex": "^0.5.0",
+    "axios": "^1.7.2",
+    "body-parser": "1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "16.0.1",
+    "express": "^4.19.2",
+    "openvidu-browser": "^2.30.1",
+    "openvidu-node-client": "^2.27.0",
+    "phaser": "^3.80.1",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "qrcode.vue": "^3.4.1",
+    "sweetalert2": "^11.6.13",
+    "vue": "^3.4.29",
+    "vue-draggable-next": "^2.2.1",
+    "vue-router": "^4.3.3",
+    "vuetify": "^3.6.12"
+  },
+  "devDependencies": {
+    "@mdi/font": "^7.4.47",
+    "@mdi/js": "^7.4.47",
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "dotenv": "16.0.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "prettier": "^3.2.5",
+    "unplugin-vue-components": "^0.27.2",
+    "vite": "^5.3.1"
+  }
+}

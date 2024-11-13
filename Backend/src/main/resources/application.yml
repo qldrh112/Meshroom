@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: backend
+  config:
+    import:
+      - classpath:/yaml/application-local.yml
+      - classpath:/yaml/application-dev.yml
+      - classpath:/yaml/application-release.yml
+      - classpath:/yaml/logging/application-local-log.yml
+      - classpath:/yaml/logging/application-dev-log.yml
+      - classpath:/yaml/logging/application-release-log.yml
+      - file:.env[.properties]
+
+  profiles:
+    group:
+      _local: local, local-log
+      _dev: dev, dev-log
+      _release: release, release-log
+    active: _${CURRENT_ENV}
+  web:
+    resources:
+      static-locations: classpath:/static/
+
+server:
+  port: 5000
+  ssl:
+    enabled: false
